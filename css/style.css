@@ -2399,6 +2399,49 @@ img {
     border: 1px solid rgba(0, 161, 224, 0.3);
 }
 
+/* Timeline Awards */
+.timeline-award {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+    padding: var(--space-md);
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 193, 7, 0.05) 100%);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.timeline-award:hover {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 193, 7, 0.1) 100%);
+    border-color: rgba(255, 215, 0, 0.5);
+    transform: translateX(5px);
+}
+
+.award-icon {
+    font-size: 1.5rem;
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.5));
+}
+
+.award-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.award-title {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #FFD700;
+}
+
+.award-meta {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--dark-muted);
+}
+
 /* Certification Badges - Modern */
 .cert-grid-modern {
     display: grid;
